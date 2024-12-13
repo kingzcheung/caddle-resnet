@@ -398,6 +398,6 @@ pub fn resnet152(vb: VarBuilder, num_classes: usize) -> Result<BottleneckResnet>
     bottleneck_resnet(vb, Some(num_classes), 3, 8, 36, 3)
 }
 
-pub fn resnet150_no_final_layer(vb: VarBuilder) -> Result<BottleneckResnet> {
+pub fn resnet152_no_final_layer(vb: VarBuilder) -> Result<BottleneckResnet> {
     bottleneck_resnet(vb, None, 3, 8, 36, 3)
 }
